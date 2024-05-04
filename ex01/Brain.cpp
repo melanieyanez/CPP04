@@ -6,7 +6,7 @@
 /*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:21:38 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/04 19:14:33 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/04 21:18:37 by melanieyane      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@
 		return (NULL);
 	}
 
-	void Brain::setIdeas(size_t index, std::string &idea){
+	void Brain::setIdeas(size_t index, std::string idea){
 		if (index >= 0 && index < sizeof(_ideas) / sizeof(_ideas[0]))
 			this->_ideas[index] = idea;
 	}

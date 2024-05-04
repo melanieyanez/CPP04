@@ -6,7 +6,7 @@
 /*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:21:27 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/04 19:14:00 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/04 21:18:28 by melanieyane      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Brain{
 		Brain &operator=(const Brain &rhs);
 
 		std::string getIdeas(size_t index) const;
-		void setIdeas(size_t index, std::string &idea);
+		void setIdeas(size_t index, std::string idea);
 	
 	private:
 		std::string _ideas[100];
