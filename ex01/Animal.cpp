@@ -6,7 +6,7 @@
 /*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:40:28 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/04 17:55:47 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/08 15:21:14 by melanieyane      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ Animal::~Animal(){
 }
 
 Animal 	&Animal::operator=(const Animal &rhs){
-	this->_type = rhs.getType();
+	if (this != &rhs)
+		this->_type = rhs.getType();
 	return *this;
 }
 		
