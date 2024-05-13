@@ -6,35 +6,47 @@
 /*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:40:42 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/13 17:11:52 by myanez-p         ###   ########.fr       */
+/*   Updated: 2024/05/13 17:10:42 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
 
 int	main(void){
 
 	std::cout << "*************************************************************************" << std::endl;
-	std::cout << "*Subject tests*" << std::endl << std::endl;
-	std::cout << "*Instantiation*" << std::endl;
+	std::cout << "*Testing Abstract and Non-Abstract Classes*" << std::endl << std::endl;
+	
+	//std::cout << "*Attempt to statically instantiate AAnimal" << std::endl;
+	//AAnimal abstractAnimal;
 
-	const Animal *i = new Cat();
+	std::cout << "*Dynamic Instantiation of Derived Classes from AAnimal*" << std::endl;
+	const AAnimal *i = new Cat();
 	std::cout << "***" << std::endl;
-	const Animal *j = new Dog();
+	const AAnimal *j = new Dog();
 
-	std::cout <<  std::endl <<  "*Destruction*" << std::endl;
+	std::cout << "*Static Instantiation of Non-Abstract Class Animal" << std::endl;
+	Animal concreteAnimal;
+
+	//std::cout << "*Attempt to dynamically instantiate Animal*" << std::endl;
+	//const Animal *i = new Cat();
+	//std::cout << "***" << std::endl;
+	//const Animal *j = new Dog();
+
+	std::cout <<  std::endl <<  "*Destruction of Dynamically Created Instances*" << std::endl;
 
 	delete j;
 	std::cout << "***" << std::endl;
 	delete i;
 
 	std::cout << std::endl << "*************************************************************************" << std::endl;
-	std::cout << "*Subject thorough tests*" << std::endl << std::endl;
-	std::cout << "*Instantiation*" << std::endl;
+	std::cout << "*Testing Instantiation and Pure Virtual Method Calls on Derived Classes*" << std::endl << std::endl;
+	std::cout << "*Instantiating Multiple Animals*" << std::endl;
 	
-	Animal *animals[10];
+	AAnimal *animals[10];
 	for (int i = 0; i < 5; i++){
 		animals[i] = new Cat;
 		std::cout << "***" << std::endl;
@@ -53,33 +65,17 @@ int	main(void){
 		delete animals[i];
 		std::cout << "***" << std::endl;
 	}
-	
+
 	std::cout << std::endl << "*************************************************************************" << std::endl;
-	std::cout << "*Brain tests*" << std::endl << std::endl;
-	std::cout << "*Instantiation*" << std::endl;
-
-	Dog *Hachiko = new Dog;
-	std::cout << "***" << std::endl;
-	Cat *Crookshanks = new Cat;
-
-	std::cout << std::endl << "*Method tests*" << std::endl;
-	Hachiko->makeSound();
-	Crookshanks->makeSound();
-
-	std::cout << std::endl << "*Ideas tests*" << std::endl;
-	Hachiko->getBrain()->setIdeas(0, "I'm a dog!");
-	std::cout << Hachiko->getBrain()->getIdeas(0) << std::endl;
-	std::cout << "***" << std::endl;
-	Crookshanks->getBrain()->setIdeas(0, "I hate you!");
-	std::cout << Crookshanks->getBrain()->getIdeas(0) << std::endl;
-	std::cout << "***" << std::endl;
-	Cat *Salem(Crookshanks);
-	std::cout << Salem->getBrain()->getIdeas(0) << std::endl;
-
-	std::cout << std::endl << "*Destruction*" << std::endl;
-	delete Hachiko;
-	std::cout << "***" << std::endl;
-	delete Crookshanks;
+	std::cout << "*Testing Non-Implementation of Pure Virtual Methods*" << std::endl << std::endl;
 	
+	std::cout <<  std::endl <<  "*Instantiation of derived classes*" << std::endl;
+	std::cout <<  std::endl <<  "*Instantiating a Cat, which properly implements all pure virtual methods*" << std::endl;
+	AAnimal	*Crookshanks = new Cat();
+	// std::cout << "*Attempt to instantiate MuteCat, which does not implement the makeSound method.*" << std::endl;
+	//AAnimal *Salem = new MuteCat();
+
+	std::cout <<  std::endl <<  "*Destruction*" << std::endl;
+	delete Crookshanks;
 	return 0;
 }

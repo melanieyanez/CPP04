@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
+/*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:40:42 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/04 19:24:42 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/13 17:12:07 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(void){
 	
 	std::cout << "*************************************************************************" << std::endl;
 	std::cout << "*Animal Tests*" << std::endl << std::endl;
-	std::cout << "*Instanciations*" << std::endl;
+	std::cout << "*Instantiations*" << std::endl;
 	const	Animal* meta = new Animal();
 	std::cout << "***" << std::endl;
 	const	Animal* i = new Cat();
@@ -45,7 +45,7 @@ int	main(void){
 	
 	std::cout << std::endl << "*************************************************************************" << std::endl;
 	std::cout << "*Wrong Animal Tests*" << std::endl << std::endl;
-	std::cout << "*Instanciations*" << std::endl;
+	std::cout << "*Instantiations*" << std::endl;
 	const	WrongAnimal* wrongmeta = new WrongAnimal();
 	std::cout << "***" << std::endl;
 	const	WrongAnimal* wrongi = new WrongCat();
