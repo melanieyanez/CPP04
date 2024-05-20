@@ -6,7 +6,7 @@
 /*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:40:42 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/13 17:10:42 by myanez-p         ###   ########.fr       */
+/*   Updated: 2024/05/20 15:50:56 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,6 @@ int	main(void){
 
 	std::cout << "*Static Instantiation of Non-Abstract Class Animal" << std::endl;
 	Animal concreteAnimal;
-
-	//std::cout << "*Attempt to dynamically instantiate Animal*" << std::endl;
-	//const Animal *i = new Cat();
-	//std::cout << "***" << std::endl;
-	//const Animal *j = new Dog();
 
 	std::cout <<  std::endl <<  "*Destruction of Dynamically Created Instances*" << std::endl;
 
