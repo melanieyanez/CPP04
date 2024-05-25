@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
+/*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:40:36 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/04 18:42:22 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/25 09:12:43 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ class Cat : public Animal{
 	
 	private:
 		Brain *_brain;
-
 };
 
 #endif

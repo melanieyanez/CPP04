@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
+/*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:21:38 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/04 21:18:37 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/25 09:11:25 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@
 		return *this;
 	}
 	
-	std::string Brain::getIdeas(size_t index) const{
+	std::string	Brain::getIdeas(size_t index) const{
 		if (index >= 0 && index < sizeof(_ideas) / sizeof(_ideas[0]))
 			return this->_ideas[index];
 		return (NULL);

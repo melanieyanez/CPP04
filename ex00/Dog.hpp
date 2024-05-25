@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
+/*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:40:39 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/04 17:36:29 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/25 09:13:32 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ class Dog : public Animal{
 		Dog &operator=(const Dog &rhs);
 
 		virtual void makeSound(void) const;
-
 };
 
 #endif

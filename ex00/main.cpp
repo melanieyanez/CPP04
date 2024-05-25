@@ -6,7 +6,7 @@
 /*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:40:42 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/13 17:12:07 by myanez-p         ###   ########.fr       */
+/*   Updated: 2024/05/25 09:09:49 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int	main(void){
 	std::cout << i->getType() << " " << std::endl; 
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << std::endl << "*Sound Tests*" << std::endl;
-	meta->makeSound(); //will output the generic animal sound!
-	i->makeSound(); //will output the cat sound!
-    j->makeSound(); //will output the dog sound!
+	meta->makeSound();
+	i->makeSound();
+    j->makeSound();
 
 	std::cout << std::endl << "*Destructor Tests*" << std::endl;
 	delete meta;
@@ -55,8 +55,8 @@ int	main(void){
 	std::cout << wrongi->getType() << " " << std::endl; 
 	
 	std::cout << std::endl << "*Sound Tests*" << std::endl;
-	wrongmeta->makeSound(); //will output the generic animal sound!
-	wrongi->makeSound(); //will output the generic animal sound!
+	wrongmeta->makeSound();
+	wrongi->makeSound();
 
 	std::cout << std::endl << "*Destructor Tests*" << std::endl;
 	delete wrongmeta;

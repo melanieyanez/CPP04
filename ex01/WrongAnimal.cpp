@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
+/*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 16:59:45 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/08 15:20:39 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/25 09:12:32 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,16 @@ WrongAnimal::~WrongAnimal(){
 	std::cout << "WrongAnimal destructor called" << std::endl;
 }
 
-WrongAnimal 	&WrongAnimal::operator=(const WrongAnimal &rhs){
+WrongAnimal	&WrongAnimal::operator=(const WrongAnimal &rhs){
 	if (this != &rhs)
 		this->_type = rhs.getType();
 	return *this;
 }
 		
-std::string 		WrongAnimal::getType(void) const{
+std::string	WrongAnimal::getType(void) const{
 	return this->_type;
 }
 
-void 		WrongAnimal::makeSound(void) const{
+void	WrongAnimal::makeSound(void) const{
 	std::cout << "WrongAnimal makes a generic sound." << std::endl;
 }

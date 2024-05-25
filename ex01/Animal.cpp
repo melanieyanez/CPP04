@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melanieyanez <melanieyanez@student.42.f    +#+  +:+       +#+        */
+/*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:40:28 by melanieyane       #+#    #+#             */
-/*   Updated: 2024/05/08 15:21:14 by melanieyane      ###   ########.fr       */
+/*   Updated: 2024/05/25 09:13:05 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,16 @@ Animal::~Animal(){
 	std::cout << "Animal destructor called" << std::endl;
 }
 
-Animal 	&Animal::operator=(const Animal &rhs){
+Animal	&Animal::operator=(const Animal &rhs){
 	if (this != &rhs)
 		this->_type = rhs.getType();
 	return *this;
 }
 		
-std::string 		Animal::getType(void) const{
+std::string	Animal::getType(void) const{
 	return this->_type;
 }
 
-void 		Animal::makeSound(void) const{
+void	Animal::makeSound(void) const{
 	std::cout << "Animal makes a generic sound." << std::endl;
 }

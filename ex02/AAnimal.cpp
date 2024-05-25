@@ -6,7 +6,7 @@
 /*   By: myanez-p <myanez-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 16:22:12 by myanez-p          #+#    #+#             */
-/*   Updated: 2024/05/13 16:24:30 by myanez-p         ###   ########.fr       */
+/*   Updated: 2024/05/25 09:11:13 by myanez-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,12 @@ AAnimal::~AAnimal(){
 	std::cout << "AAnimal destructor called" << std::endl;
 }
 
-AAnimal 	&AAnimal::operator=(const AAnimal &rhs){
+AAnimal &AAnimal::operator=(const AAnimal &rhs){
 	if (this != &rhs)
 		this->_type = rhs.getType();
 	return *this;
 }
 		
-std::string 		AAnimal::getType(void) const{
+std::string	AAnimal::getType(void) const{
 	return this->_type;
 }
